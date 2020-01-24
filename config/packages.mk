@@ -1,4 +1,4 @@
-# Copyright (C) 2020 SOSP-OS Project
+# Copyright (C) 2022 SOSP-OS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,6 +24,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
     
+# Charger mode images
+ifeq ($(TARGET_INCLUDE_PIXEL_CHARGER),true)
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+endif
+
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
