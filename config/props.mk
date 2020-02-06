@@ -37,10 +37,5 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.disable_rescue=true \
     net.tethering.noprovisioning=true \
     ro.config.calibration_cad=/system/etc/calibration_cad.xml
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
-    ro.adb.secure=1 \
-    ro.secure=1 \
-    persist.service.adb.enable=1
     
 
