@@ -42,4 +42,5 @@ PRODUCT_PACKAGES += \
     messaging \
     Stk \
     Terminal \
-    ThemePicker
+    ThemePicker \
+    SoundRecorder
