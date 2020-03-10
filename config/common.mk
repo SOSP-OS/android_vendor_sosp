@@ -53,3 +53,6 @@ include vendor/sosp/config/packages.mk
 
 # Props
 include vendor/sosp/config/props.mk
+
+# Sounds
+include vendor/sosp/config/sounds.mk
