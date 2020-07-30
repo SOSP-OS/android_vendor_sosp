@@ -12,8 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Accents
+# Sosp Themes
 PRODUCT_PACKAGES += \
+    ThemePicker \
+    SospThemesStub \
     AccentColorYellowOverlay \
     AccentColorVioletOverlay \
     AccentColorTealOverlay \
@@ -42,5 +44,4 @@ PRODUCT_PACKAGES += \
     messaging \
     Stk \
     Terminal \
-    ThemePicker \
     SoundRecorder
