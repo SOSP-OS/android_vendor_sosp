@@ -56,3 +56,6 @@ include vendor/sosp/config/props.mk
 
 # Sounds
 include vendor/sosp/config/sounds.mk
+
+# SOSP Themes
+include vendor/sosp/config/themes.mk
