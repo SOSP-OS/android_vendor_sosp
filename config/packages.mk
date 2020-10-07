@@ -27,4 +27,5 @@ PRODUCT_PACKAGES += \
     messaging \
     Stk \
     Terminal \
-    SoundRecorder
+    SoundRecorder \
+    SospSettings
