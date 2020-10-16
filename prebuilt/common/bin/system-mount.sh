@@ -2,9 +2,16 @@
 #
 # System mount script
 #
-
 system=$(mount | grep system | sed 's|.*on ||' | sed 's| type.*||')
-system_device="/dev/block/bootdevice/by-name/system"
+system_device=${2}
+
+if [ -d /mnt/system ]; then
+  sys_mount="/mnt/system"
+elif [ -d /system_root ]; then
+  sys_mount="/system_root"
+else
+  sys_mount="/system"
+fi;
 
 case ${1} in
   check)
@@ -12,13 +19,14 @@ case ${1} in
       umount $system
     fi
   ;;
-  mount)
-    if [ ! -d "/tmp/system_mount" ]; then
-      mkdir /tmp/system_mount
-    fi;
-    mount $system_device /tmp/system_mount
+  backup)
+    mount $system_device $sys_mount
+    ./tmp/install/bin/backuptool.sh "backup" $sys_mount/system
+    umount $sys_mount
   ;;
-  unmount)
-    umount /tmp/system_mount
+  restore)
+    mount $system_device $sys_mount -t ext4
+    ./tmp/install/bin/backuptool.sh "restore" $sys_mount/system
+    umount $sys_mount
   ;;
 esac

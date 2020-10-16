@@ -22,10 +22,9 @@ PRODUCT_COPY_FILES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/sosp/prebuilt/common/addon.d/50-sosp.sh:system/addon.d/50-sosp.sh \
+    vendor/sosp/prebuilt/common/bin/50-sosp.sh:system/addon.d/50-sosp.sh \
     vendor/sosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/sosp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/sosp/prebuilt/common/bin/system-mount.sh:install/bin/system-mount.sh
+    vendor/sosp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
 
 # Device Common Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -37,14 +36,27 @@ PRODUCT_COPY_FILES += \
 
 # Init.d script support
 PRODUCT_COPY_FILES += \
-    vendor/sosp/prebuilt/common/bin/sysinit:system/bin/sysinit \
-    vendor/sosp/prebuilt/common/etc/init/sosp-system.rc:system/etc/init/sosp-system.rc \
-    vendor/sosp/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner
+    vendor/sosp/prebuilt/common/etc/init/init.sosp.rc:system/etc/init/init.sosp.rc
 
 # Priv-app config
 PRODUCT_COPY_FILES += \
     vendor/sosp/config/permissions/privapp-permissions-sosp.xml:system/etc/permissions/privapp-permissions-sosp.xml
 
+# Do not include art debug targets
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+
+# Strip the local variable table and the local variable type table to reduce
+# the size of the system image. This has no bearing on stack traces, but will
+# leave less information available via JDWP.
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
+# Disable vendor restrictions
+PRODUCT_RESTRICT_VENDOR_FILES := false
+
+# System mount
+PRODUCT_COPY_FILES += \
+    vendor/sosp/prebuilt/common/bin/system-mount.sh:install/bin/system-mount.sh
+    
 # Boot animations
 include vendor/sosp/config/bootanimation.mk
 
