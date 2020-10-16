@@ -12,43 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include {Lato,Rubik} fonts
-$(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
-$(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
-
 # Theme Packages
 PRODUCT_PACKAGES += \
-    ThemePicker \
-    SospThemesStub \
-    BlackTheme
-    
-# Accents   
-PRODUCT_PACKAGES += \
-    BlackAccents \
-    BlueGrayAccents \
-    CyanAccents \
-    IndigoAccents \
-    LightPurpleAccents \
-    OrangeAccents \
-    PixelBlueAccents \
-    GreenAccents \
-    RedAccents \
-    TealAccents \
-    VioletAccents \
-    YellowAccents
-
-# Fonts
-PRODUCT_PACKAGES += \
-    fonts_customization.xml \
-    LatoFont \
-    RubikFont
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    ThemePicker
