@@ -28,10 +28,8 @@ PRODUCT_PACKAGES += \
     BlueGrayAccents \
     CyanAccents \
     IndigoAccents \
-    LightPurpleAccents \
     OrangeAccents \
     PixelBlueAccents \
-    GreenAccents \
     RedAccents \
     TealAccents \
     VioletAccents \
