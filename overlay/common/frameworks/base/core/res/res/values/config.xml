@@ -37,4 +37,7 @@
     <!-- Pixel -->
     <bool name="config_smart_battery_available">true</bool>
     
+    <!-- Turn on dark theme by default -->
+    <integer name="config_defaultNightMode">2</integer>
+    
 </resources>
