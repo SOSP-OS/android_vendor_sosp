@@ -19,8 +19,7 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 # Theme Packages
 PRODUCT_PACKAGES += \
     ThemePicker \
-    SospThemesStub \
-    BlackTheme
+    ThemeStub
     
 # Accents   
 PRODUCT_PACKAGES += \
