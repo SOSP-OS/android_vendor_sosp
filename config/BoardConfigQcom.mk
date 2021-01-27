@@ -113,5 +113,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys/system/bt/conf
 endif #TARGET_USE_QTI_BT_STACK
 
+# Add data-ipa-cfg-mgr to PRODUCT_SOONG_NAMESPACES if needed
+ifneq ($(USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR),true)
+    PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/data-ipa-cfg-mgr
+endif
+
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)
