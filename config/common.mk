@@ -56,7 +56,11 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # System mount
 PRODUCT_COPY_FILES += \
     vendor/sosp/prebuilt/common/bin/system-mount.sh:install/bin/system-mount.sh
-    
+
+# Enable support of one-handed mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_one_handed_mode=true
+        
 # Boot animations
 include vendor/sosp/config/bootanimation.mk
 
