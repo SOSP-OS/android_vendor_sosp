@@ -41,7 +41,6 @@ SOONG_CONFIG_sospGlobalVars += \
     target_surfaceflinger_fod_lib \
     uses_camera_parameter_lib
 
-<<<<<<< HEAD
 SOONG_CONFIG_NAMESPACES += sospQcomVars
 SOONG_CONFIG_sospQcomVars += \
     legacy_hw_disk_encryption \
