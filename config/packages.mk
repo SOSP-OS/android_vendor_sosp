@@ -12,20 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Additional tools
-PRODUCT_PACKAGES += \
-    fsck.exfat \
-    fsck.ntfs \
-    mke2fs \
-    mkfs.exfat \
-    mkfs.ntfs \
-    mount.ntfs
-
 # App packages
 PRODUCT_PACKAGES += \
     Launcher3 \
     messaging \
     Stk \
-    Terminal \
     SoundRecorder \
     SospSettings
