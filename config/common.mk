@@ -34,10 +34,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-# Init.d script support
-PRODUCT_COPY_FILES += \
-    vendor/sosp/prebuilt/common/etc/init/init.sosp.rc:system/etc/init/init.sosp.rc
-
 # Priv-app config
 PRODUCT_COPY_FILES += \
     vendor/sosp/config/permissions/privapp-permissions-sosp.xml:system/etc/permissions/privapp-permissions-sosp.xml
