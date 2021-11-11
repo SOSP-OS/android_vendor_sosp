@@ -41,14 +41,7 @@
     
     <!-- The amount to scale fullscreen snapshots for Overview and snapshot starting windows. -->
     <item format="float" type="dimen" name="config_fullTaskSnapshotScale">0.8</item>
-    
-    <!-- Minimum color temperature, in Kelvin, supported by Night display. -->
-    <integer name="config_nightDisplayColorTemperatureMin">1600</integer>
-
-    <!-- Default color temperature, in Kelvin, to tint the screen when Night display is
-         activated. -->
-    <integer name="config_nightDisplayColorTemperatureDefault">2650</integer>
-    
+      
     <!-- Control the behavior when the user long presses the power button.
             0 - Nothing
             1 - Global actions menu
