@@ -19,3 +19,26 @@ PRODUCT_PACKAGES += \
     Stk \
     SoundRecorder \
     SospSettings
+
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
+    
+# Extra tools
+PRODUCT_PACKAGES += \
+    7z \
+    bash \
+    curl \
+    getcap \
+    htop \
+    lib7z \
+    libsepol \
+    nano \
+    pigz \
+    powertop \
+    setcap \
+    unrar \
+    unzip \
+    vim \
+    wget \
+    zip    
