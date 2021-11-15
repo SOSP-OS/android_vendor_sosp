@@ -15,8 +15,7 @@
 # Theme Packages
 PRODUCT_PACKAGES += \
     ThemePicker \
-    ThemeStub  \
-    WallpaperPicker2
+    ThemeStub
     
     
     
