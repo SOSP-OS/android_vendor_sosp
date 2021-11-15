@@ -34,6 +34,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
+# Enable gestural navigation overlay to match default navigation mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+    
 # Priv-app config
 PRODUCT_COPY_FILES += \
     vendor/sosp/config/permissions/privapp-permissions-sosp.xml:system/etc/permissions/privapp-permissions-sosp.xml
