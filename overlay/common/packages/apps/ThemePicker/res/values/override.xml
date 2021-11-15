@@ -18,6 +18,7 @@
 
     <!-- Set default theme stub package -->
     <string name="themes_stub_package" translatable="false">com.android.customization.themestub</string>
+    <string name="clocks_stub_package" translatable="false">com.android.customization.themestub</string>
     
     <!-- List of packages whose icons are used to preview the icon shape for a theme. These are
         typically GMS apps so they should be available in GMS devices. -->
