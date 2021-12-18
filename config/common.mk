@@ -14,15 +14,15 @@
 
 # APN
 PRODUCT_COPY_FILES += \
-    vendor/sosp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/sosp/prebuilt/common/etc/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml
 
 # AR
 PRODUCT_COPY_FILES += \
-    vendor/sosp/prebuilt/common/etc/calibration_cad.xml:system/etc/calibration_cad.xml
+    vendor/sosp/prebuilt/common/etc/calibration_cad.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/calibration_cad.xml
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/sosp/prebuilt/common/bin/50-sosp.sh:system/addon.d/50-sosp.sh \
+    vendor/sosp/prebuilt/common/bin/50-sosp.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-sosp.sh \
     vendor/sosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/sosp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
 
@@ -32,7 +32,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.sip.voip.xml
 
 # Enable gestural navigation overlay to match default navigation mode
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -40,7 +40,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     
 # Priv-app config
 PRODUCT_COPY_FILES += \
-    vendor/sosp/config/permissions/privapp-permissions-sosp.xml:system/etc/permissions/privapp-permissions-sosp.xml
+    vendor/sosp/config/permissions/privapp-permissions-sosp.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-sosp.xml
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
