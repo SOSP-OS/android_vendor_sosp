@@ -55,8 +55,10 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Init.d script support
 PRODUCT_COPY_FILES += \
-    vendor/sosp/prebuilt/common/etc/init.local.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sosp.rc
-    
+    vendor/sosp/prebuilt/common/etc/init/init.sosp-system.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.sosp-system.rc \
+    vendor/sosp/prebuilt/common/etc/init/init.sosp-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.sosp-updater.rc \
+    vendor/sosp/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
+      
 # System mount
 PRODUCT_COPY_FILES += \
     vendor/sosp/prebuilt/common/bin/system-mount.sh:install/bin/system-mount.sh

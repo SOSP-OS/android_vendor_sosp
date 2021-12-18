@@ -1,14 +1,6 @@
 on init
     export TERMINFO /product/etc/terminfo
 
-on post-fs-data
-    mkdir /data/ssh 0750 root shell encryption=Require
-    mkdir /data/ssh/empty 0600 root shell
-
-    # Create an additional OTA package directory that unlike /data/ota_package
-    # will not be touched by GmsCore.
-    mkdir /data/sospos_updates 0770 system cache encryption=Require
-
 on property:sys.boot_completed=1
     # Restrict permissions to socket file
     # to hide Magisk & co.
