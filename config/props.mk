@@ -33,7 +33,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     org.sosp.fingerprint=$(PLATFORM_VERSION)-$(BUILD_ID)-$(SOSP_BUILD_DATE) \
-    ro.build.selinux=1 \
     persist.sys.disable_rescue=true \
     net.tethering.noprovisioning=true \
     ro.config.calibration_cad=/system/etc/calibration_cad.xml
