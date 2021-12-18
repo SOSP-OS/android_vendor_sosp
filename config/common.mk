@@ -23,9 +23,16 @@ PRODUCT_COPY_FILES += \
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/sosp/prebuilt/common/bin/50-sosp.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-sosp.sh \
-    vendor/sosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/sosp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
+    vendor/sosp/prebuilt/common/bin/backuptool.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool.sh \
+    vendor/sosp/prebuilt/common/bin/backuptool.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool.functions
 
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/addon.d/50-sosp.sh
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/bin/backuptool.sh \
+    system/bin/backuptool.functions
+        
 # Device Common Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/sosp/overlay/common
