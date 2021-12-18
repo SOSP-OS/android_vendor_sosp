@@ -1,5 +1,5 @@
 on init
-    export TERMINFO /system/etc/terminfo
+    export TERMINFO /product/etc/terminfo
 
 on post-fs-data
     mkdir /data/ssh 0750 root shell encryption=Require
