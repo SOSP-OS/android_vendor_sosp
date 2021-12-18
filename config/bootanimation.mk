@@ -13,4 +13,4 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
-    vendor/sosp/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+    vendor/sosp/prebuilt/common/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
