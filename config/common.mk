@@ -70,6 +70,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/sosp/prebuilt/common/bin/system-mount.sh:install/bin/system-mount.sh
 
+# SystemUI
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.systemuicompilerfilter=speed
+    
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true
