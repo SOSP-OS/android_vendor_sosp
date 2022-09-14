@@ -31,7 +31,6 @@ SOONG_CONFIG_sospGlobalVars += \
     additional_gralloc_10_usage_bits \
     bootloader_message_offset \
     disable_postrender_cleanup \
-    needs_netd_direct_connect_rule \
     target_init_vendor_lib \
     target_ld_shim_libs \
     target_process_sdk_version_override \
@@ -55,7 +54,6 @@ endif
 
 # Soong bool variables
 SOONG_CONFIG_sospGlobalVars_disable_postrender_cleanup := $(TARGET_DISABLE_POSTRENDER_CLEANUP)
-SOONG_CONFIG_sospGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)
 SOONG_CONFIG_sospNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_sospQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_sospQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
