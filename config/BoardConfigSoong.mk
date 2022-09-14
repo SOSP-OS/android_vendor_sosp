@@ -49,7 +49,6 @@ SOONG_CONFIG_NAMESPACES += sospQcomVars
 SOONG_CONFIG_sospQcomVars += \
     supports_extended_compress_format \
     uses_pre_uplink_features_netmgrd \
-    uses_qcom_bsp_legacy \
     needs_camera_boottime_timestamp
 
 # Only  create display_headers_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
@@ -67,7 +66,6 @@ SOONG_CONFIG_sospGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NET
 SOONG_CONFIG_sospNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_sospQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_sospQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
-SOONG_CONFIG_sospQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
 SOONG_CONFIG_sospQcomVars_needs_camera_boottime_timestamp := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 
 # Set default values
