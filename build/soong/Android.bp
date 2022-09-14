@@ -53,23 +53,6 @@ cc_library_headers {
 // Target platform agnostic config modules
 
 soong_config_module_type {
-    name: "disable_postrender_cleanup",
-    module_type: "cc_defaults",
-    config_namespace: "sospGlobalVars",
-    bool_variables: ["disable_postrender_cleanup"],
-    properties: ["cppflags"],
-}
-
-disable_postrender_cleanup {
-    name: "disable_postrender_cleanup_defaults",
-    soong_config_variables: {
-        disable_postrender_cleanup: {
-            cppflags: ["-DDISABLE_POSTRENDER_CLEANUP"],
-        },
-    },
-}
-
-soong_config_module_type {
     name: "gralloc_10_usage_bits",
     module_type: "cc_defaults",
     config_namespace: "sospGlobalVars",
@@ -82,23 +65,6 @@ gralloc_10_usage_bits {
     soong_config_variables: {
         additional_gralloc_10_usage_bits: {
             cppflags: ["-DADDNL_GRALLOC_10_USAGE_BITS=%s"],
-        },
-    },
-}
-
-soong_config_module_type {
-    name: "target_process_sdk_version_overrides",
-    module_type: "cc_defaults",
-    config_namespace: "sospGlobalVars",
-    value_variables: ["target_process_sdk_version_override"],
-    properties: ["cppflags"],
-}
-
-target_process_sdk_version_overrides {
-    name: "process_sdk_version_overrides_defaults",
-    soong_config_variables: {
-        target_process_sdk_version_override: {
-            cppflags: ["-DSDK_VERSION_OVERRIDES=\"%s\""],
         },
     },
 }

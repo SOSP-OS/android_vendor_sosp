@@ -30,10 +30,8 @@ SOONG_CONFIG_NAMESPACES += sospGlobalVars
 SOONG_CONFIG_sospGlobalVars += \
     additional_gralloc_10_usage_bits \
     bootloader_message_offset \
-    disable_postrender_cleanup \
     target_init_vendor_lib \
     target_ld_shim_libs \
-    target_process_sdk_version_override \
     target_surfaceflinger_udfps_lib
 
 SOONG_CONFIG_NAMESPACES += sospNvidiaVars
@@ -53,7 +51,6 @@ SOONG_CONFIG_sospQcomVars += \
 endif
 
 # Soong bool variables
-SOONG_CONFIG_sospGlobalVars_disable_postrender_cleanup := $(TARGET_DISABLE_POSTRENDER_CLEANUP)
 SOONG_CONFIG_sospNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_sospQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_sospQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
@@ -69,7 +66,6 @@ SOONG_CONFIG_sospGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIO
 SOONG_CONFIG_sospGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
 SOONG_CONFIG_sospGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)
 SOONG_CONFIG_sospGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
-SOONG_CONFIG_sospGlobalVars_target_process_sdk_version_override := $(TARGET_PROCESS_SDK_VERSION_OVERRIDE)
 SOONG_CONFIG_sospGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
 
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
