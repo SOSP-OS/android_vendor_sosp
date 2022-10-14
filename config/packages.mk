@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
     messaging \
     Stk \
     SoundRecorder \
-    SospSettings
+    SospSettings \
+    Recorder
 
 # Config
 PRODUCT_PACKAGES += \
