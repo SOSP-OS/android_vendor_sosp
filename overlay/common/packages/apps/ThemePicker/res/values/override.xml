@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright (C) 2020 SOSP-OS Project
+    Copyright (C) 2022 SOSP-OS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -17,7 +17,5 @@
 <resources>
 
     <!-- Set default theme stub package -->
-    <string name="themes_stub_package" translatable="false">com.android.customization.themestub</string>
-    <string name="clocks_stub_package" translatable="false">com.android.customization.themestub</string>
-    
+    <string name="themes_stub_package" translatable="false">org.sosp.customization</string>  
 </resources>
