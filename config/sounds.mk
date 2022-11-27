@@ -95,10 +95,3 @@ PRODUCT_COPY_FILES += \
 	vendor/sosp/sounds/ui/SystemTurnOff.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/SystemTurnOff.ogg \
 	vendor/sosp/sounds/ui/Unlock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Unlock.ogg \
 	vendor/sosp/sounds/ui/VideoRecord.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/VideoRecord.ogg
-
-PRODUCT_PRODUCT_PROPERTIES += \
-   ro.config.ringtone=Mi.ogg \
-   ro.config.notification_sound=Chord.ogg \
-   ro.config.alarm_alert=Morning.ogg
-    
-
