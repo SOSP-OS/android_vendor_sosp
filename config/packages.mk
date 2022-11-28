@@ -34,20 +34,13 @@ endif
 
 # Extra tools
 PRODUCT_PACKAGES += \
-    7z \
     bash \
     curl \
     getcap \
     htop \
-    lib7z \
     nano \
-    pigz \
-    powertop \
     setcap \
-    unrar \
-    unzip \
-    vim \
-    zip    
+    vim  
     
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/curl \
