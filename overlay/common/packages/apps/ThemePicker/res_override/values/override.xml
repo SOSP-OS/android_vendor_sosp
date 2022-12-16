@@ -16,6 +16,6 @@
 -->
 <resources>
 
-    <!-- Set default theme stub package -->
+    <!-- Package of the stub apk containing the themes descriptions -->
     <string name="themes_stub_package" translatable="false">org.sosp.customization</string>  
 </resources>
