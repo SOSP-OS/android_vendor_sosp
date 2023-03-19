@@ -15,7 +15,7 @@
 # Theme Packages
 PRODUCT_PACKAGES += \
     ThemePicker \
-    SOSPOSThemesStub \
+    ThemesStub \
     SospBlackTheme
     
     
