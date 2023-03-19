@@ -15,7 +15,8 @@
 # Theme Packages
 PRODUCT_PACKAGES += \
     ThemePicker \
-    SOSPOSThemesStub
+    SOSPOSThemesStub \
+    SospBlackTheme
     
     
 # Include {Lato,Rubik} fonts
