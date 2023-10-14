@@ -20,7 +20,10 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     SospSettings \
     Recorder
-
+# Overlay
+PRODUCT_PACKAGES += \
+    DocumentsUIOverlay
+    
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
