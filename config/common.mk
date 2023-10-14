@@ -45,20 +45,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
     
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED ?= true
-
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-PRODUCT_PACKAGES += \
-    ParanoidSense
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.face.sense_service.enabled=true
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
-endif
-
 # Priv-app config
 PRODUCT_COPY_FILES += \
     vendor/sosp/config/permissions/privapp-permissions-sosp.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-sosp.xml
