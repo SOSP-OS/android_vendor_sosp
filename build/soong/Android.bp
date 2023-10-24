@@ -158,6 +158,23 @@ egl_display_array {
     },
 }
 
+soong_config_module_type {
+    name: "camera_override_format_from_reserved",
+    module_type: "cc_defaults",
+    config_namespace: "sospGlobalVars",
+    bool_variables: ["camera_override_format_from_reserved"],
+    properties: ["cppflags"],
+}
+
+camera_override_format_from_reserved {
+    name: "camera_override_format_from_reserved_defaults",
+    soong_config_variables: {
+        camera_override_format_from_reserved: {
+            cppflags: ["-DTARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED"],
+        },
+    },
+}
+
 // QCOM specific config modules
 soong_config_module_type {
     name: "librmnetctl_pre_uplink",
