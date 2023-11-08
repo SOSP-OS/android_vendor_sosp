@@ -37,13 +37,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true \
     ro.config.calibration_cad=/system/etc/calibration_cad.xml
     
-# Spoof fingerprint for Google Play Services and SafetyNet
-ifeq ($(PRODUCT_OVERRIDE_GMS_FINGERPRINT),)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.build.gms_fingerprint=Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys
-else
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.build.gms_fingerprint=$(PRODUCT_OVERRIDE_GMS_FINGERPRINT)
-endif
-
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
