@@ -86,4 +86,8 @@
          value is left empty.  When this is non-empty then config_rawContactsLocalAccountName
          should also be non-empty.-->
     <string name="config_rawContactsLocalAccountType" translatable="false">com.android.contacts</string>
+
+    <!-- The type of the light sensor to be used by the display framework for things like
+         auto-brightness. If unset, then it just gets the default sensor of type TYPE_LIGHT. -->
+    <string name="config_displayLightSensorType" translatable="false">android.sensor.light</string>
 </resources>
