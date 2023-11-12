@@ -29,6 +29,7 @@ $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
 SOONG_CONFIG_NAMESPACES += sospGlobalVars
 SOONG_CONFIG_sospGlobalVars += \
     additional_gralloc_10_usage_bits \
+    aapt_version_code \
     gralloc_handle_has_reserved_size \
     gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_ubwcp_format \
@@ -75,6 +76,7 @@ TARGET_INIT_VENDOR_LIB ?= vendor_init
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
 
 # Soong value variables
+SOONG_CONFIG_sospGlobalVars_aapt_version_code := $(shell date -u +%Y%m%d)
 SOONG_CONFIG_sospGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
 SOONG_CONFIG_sospGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)
 SOONG_CONFIG_sospGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
