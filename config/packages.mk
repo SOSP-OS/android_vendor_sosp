@@ -19,7 +19,9 @@ PRODUCT_PACKAGES += \
     Stk \
     SoundRecorder \
     SospSettings \
-    Recorder
+    Recorder \
+    Aperture
+    
 # Overlay
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay
@@ -57,4 +59,4 @@ PRODUCT_PACKAGES_DEBUG += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/procmem
-endif        
+endif
