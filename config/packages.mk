@@ -22,6 +22,17 @@ PRODUCT_PACKAGES += \
     Recorder \
     Aperture
     
+# Clocks
+PRODUCT_PACKAGES += \
+    SystemUIClocks-Flex \
+    SystemUIClocks-Metro \
+    SystemUIClocks-BigNum \
+    SystemUIClocks-Growth \
+    SystemUIClocks-NumOverlap \
+    SystemUIClocks-Calligraphy \
+    SystemUIClocks-Inflate \
+    SystemUIClocks-Weather
+    
 # Overlay
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay
