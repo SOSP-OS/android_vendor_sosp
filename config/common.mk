@@ -50,7 +50,8 @@ TARGET_FACE_UNLOCK_SUPPORTED ?= true
 
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
 PRODUCT_PACKAGES += \
-    ParanoidSense
+    ParanoidSense \
+    ParanoidSenseTranslation
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.face.sense_service=true
