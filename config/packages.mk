@@ -24,13 +24,13 @@ PRODUCT_PACKAGES += \
     
 # Clocks
 PRODUCT_PACKAGES += \
-    SystemUIClocks-Flex \
-    SystemUIClocks-Metro \
     SystemUIClocks-BigNum \
-    SystemUIClocks-Growth \
-    SystemUIClocks-NumOverlap \
     SystemUIClocks-Calligraphy \
+    SystemUIClocks-Flex \
+    SystemUIClocks-Growth \
+    SystemUIClocks-Handwritten \
     SystemUIClocks-Inflate \
+    SystemUIClocks-NumOverlap \
     SystemUIClocks-Weather
     
 # Overlay
