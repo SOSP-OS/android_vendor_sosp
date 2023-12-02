@@ -40,7 +40,12 @@ PRODUCT_PACKAGES += \
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig \
-    SospOSConfigOverlay
+    SospOSConfigOverlay \
+    CertifiedPropsOverlay
+
+# Certified Props
+PRODUCT_COPY_FILES += \
+    vendor/sosp/config/config-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml
     
 # Charger mode images
 ifeq ($(TARGET_INCLUDE_PIXEL_CHARGER),true)
