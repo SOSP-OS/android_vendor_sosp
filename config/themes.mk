@@ -13,10 +13,9 @@
 # limitations under the License.
 
 # Theme Packages
-#PRODUCT_PACKAGES += \
-#    ThemePicker \
-#    ThemesStub \
-#    SospBlackTheme
+PRODUCT_PACKAGES += \
+    ThemePicker \
+    ThemesStub
     
     
 # Include {Lato,Rubik} fonts
