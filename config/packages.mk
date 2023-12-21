@@ -39,7 +39,8 @@ PRODUCT_PACKAGES += \
     
 # Config
 PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
+    SimpleDeviceConfig \
+    SospOSConfigOverlay
     
 # Charger mode images
 ifeq ($(TARGET_INCLUDE_PIXEL_CHARGER),true)
